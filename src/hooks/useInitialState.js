@@ -1,8 +1,8 @@
 import { useState } from'react';
 
 const initialState = {
-  cart: [],
-}
+  cart: []
+};
 
 const useInitialState = () => {
   const [state, setState] = useState(initialState);

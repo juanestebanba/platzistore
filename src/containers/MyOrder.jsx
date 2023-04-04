@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import OrderItem from '../components/OrderItem';
 import AppContext from '../context/AppContext';
-import '../styles/MyOrder.scss';
+import styles from '../styles/MyOrder.module.scss';
 
 const MyOrder = () => {
   const { state } = useContext(AppContext);
@@ -13,7 +13,7 @@ const sumTotal =() => {
 };
   
 	return (
-		<aside className="MyOrder">
+		<aside className={styles.MyOrder}>
 			<div className="title-container">
 				<p className="title">My order</p>
 			</div>
